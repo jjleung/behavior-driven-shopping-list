@@ -14,9 +14,9 @@ class ShoppingListItem {
   }
 
   render() {
-    let renderStr = '<li class ="completed_' + this.is_done + '">';
-    renderStr += "<span>" + this.name + "</span>";
-    renderStr += "<span>" + this.description + "</span></li>";
+    let renderStr = `<li class ="completed_${this.is_done}">`;
+    renderStr += `<span>${this.name}: </span>`;
+    renderStr += `<span>${this.description}</span></li>`;
     return renderStr;
   }
 }
